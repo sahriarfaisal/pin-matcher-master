@@ -19,27 +19,27 @@
             <div class="col-md-6">
                 <div class="input-section half-width">
                     <form action="" name="form">
-                        <input id="passDisplay" class="form-control" type="text" placeholder="0" name="display" value="">
+                        <input class="form-control" type="text" placeholder="0" name="screen">
                         <div class="numbers">
                             <div class="calc-body">
                                 <div class="calc-button-row">
-                                  <div class="button" name="b7" value="7" onClick="displayPass(this.value)">7</div>
-                                  <div class="button" name="b8" value="8" onClick="calcNumbers(b8.value)">8</div>
-                                  <div class="button" name="b9" value="9" onClick="calcNumbers(b9.value)" >9</div>
+                                  <div id="" class="button" name="b7" value="7" onClick="form.screen.value += '7'">7</div>
+                                  <div class="button" name="b8" value="8" onClick="form.screen.value += '8'">8</div>
+                                  <div class="button" name="b9" value="9" onClick="form.screen.value += '9'">9</div>
                                 </div>
                                 <div class="calc-button-row">
-                                  <div class="button" name="b4" value="4" onClick="calcNumbers(b4.value)" >4</div>
-                                  <div class="button" name="b5" value="5" onClick="calcNumbers(b5.value)" >5</div>
-                                  <div class="button" name="b6" value="6" onClick="calcNumbers(b6.value)" >6</div>
+                                  <div class="button" name="b4" value="4" onClick="form.screen.value += '4'">4</div>
+                                  <div class="button" name="b5" value="5" onClick="form.screen.value += '5'">5</div>
+                                  <div class="button" name="b6" value="6" onClick="form.screen.value += '6'">6</div>
                                 </div>
                                 <div class="calc-button-row">
-                                  <div class="button" name="b1" value="1" onClick="calcNumbers(b1.value)" >1</div>
-                                  <div class="button" name="b2" value="2" onClick="calcNumbers(b2.value)" >2</div>
-                                  <div class="button" name="b3" value="3" onClick="calcNumbers(b3.value)" >3</div>
+                                  <div class="button" name="b1" value="1" onClick="form.screen.value += '1'">1</div>
+                                  <div class="button" name="b2" value="2" onClick="form.screen.value += '2'">2</div>
+                                  <div class="button" name="b3" value="3" onClick="form.screen.value += '3'">3</div>
                                 </div>
                                 <div class="calc-button-row">
                                     <div class="button"><</div>
-                                    <div class="button" name="b0" value="0" onClick="calcNumbers(b0.value)">0</div>
+                                    <div class="button" name="b0" value="0" onClick="form.screen.value += '0'">0</div>
                                     <div class="button">C</div>
                                 </div>
                                 <div>

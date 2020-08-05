@@ -10,16 +10,10 @@
             let randomNum = parseInt(random);
             return randomNum;
         };
-        let getRandIntValue = getRandomInt();
-        //Display 
 
-        // function displayPass(x) {
-        //     let getPassValue = currentPassNumber;
-        //     getPassValue = x;
-        // }
-
-
-    function displayPass(x) {
-       form.display.value = x;
+// // Display
+//     function displayPass(x) {
+//         let ok = parseInt(x);
+//         form.screen.value = ok;
            
-       };
+//        };
