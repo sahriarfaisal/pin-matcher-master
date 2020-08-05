@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pin-generator half-width">
+                    <input id="generateDisplay" class="form-control" type="text" placeholder="0" value="">
+                    <button id="generatePinBtn" class="generate-btn">Generate Pin</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-section half-width">
+                    <form action="" name="form">
+                        <input id="passDisplay" class="form-control" type="text" placeholder="0" name="display" value="">
+                        <div class="numbers">
+                            <div class="calc-body">
+                                <div class="calc-button-row">
+                                  <div class="button" name="b7" value="7" onClick="displayPass(this.value)">7</div>
+                                  <div class="button" name="b8" value="8" onClick="calcNumbers(b8.value)">8</div>
+                                  <div class="button" name="b9" value="9" onClick="calcNumbers(b9.value)" >9</div>
+                                </div>
+                                <div class="calc-button-row">
+                                  <div class="button" name="b4" value="4" onClick="calcNumbers(b4.value)" >4</div>
+                                  <div class="button" name="b5" value="5" onClick="calcNumbers(b5.value)" >5</div>
+                                  <div class="button" name="b6" value="6" onClick="calcNumbers(b6.value)" >6</div>
+                                </div>
+                                <div class="calc-button-row">
+                                  <div class="button" name="b1" value="1" onClick="calcNumbers(b1.value)" >1</div>
+                                  <div class="button" name="b2" value="2" onClick="calcNumbers(b2.value)" >2</div>
+                                  <div class="button" name="b3" value="3" onClick="calcNumbers(b3.value)" >3</div>
+                                </div>
+                                <div class="calc-button-row">
+                                    <div class="button"><</div>
+                                    <div class="button" name="b0" value="0" onClick="calcNumbers(b0.value)">0</div>
+                                    <div class="button">C</div>
+                                </div>
+                                <div>
+                                    <button type="submit" class="submit-btn">Submit</button>
+                                    <p class="action-left">3 try left</p>
+                                </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="notify-section">
+            <p id="notify_false"class="notify">❌ Pin Didn't Match, Please try again</p>
+            <p id="notify_true" class="notify">✅ Pin Matched... Secret door is opening for you</p>
+        </div>
+    </div>
+    <script src="pinMatcher.js"></script>
+</body>
+</html>
