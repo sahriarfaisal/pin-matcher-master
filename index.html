@@ -19,7 +19,7 @@
             <div class="col-md-6">
                 <div class="input-section half-width">
                     <form action="" name="form">
-                        <input class="form-control" type="text" placeholder="0" name="screen">
+                        <input id="screenValue" class="form-control" type="text" placeholder="0" name="screen">
                         <div class="numbers">
                             <div class="calc-body">
                                 <div class="calc-button-row">
@@ -38,12 +38,12 @@
                                   <div class="button" name="b3" value="3" onClick="form.screen.value += '3'">3</div>
                                 </div>
                                 <div class="calc-button-row">
-                                    <div class="button"><</div>
+                                    <div class="button" value="<" onclick="form.screen.value = form.screen.value.slice(0, -1)"><</div>
                                     <div class="button" name="b0" value="0" onClick="form.screen.value += '0'">0</div>
-                                    <div class="button">C</div>
+                                    <div class="button" value="C" onclick="form.screen.value = '' ">C</div>
                                 </div>
                                 <div>
-                                    <button type="submit" class="submit-btn">Submit</button>
+                                    <button type="submit" id="submitBtn" class="submit-btn">Submit</button>
                                     <p class="action-left">3 try left</p>
                                 </div>
                         </div>
@@ -52,8 +52,8 @@
             </div>
         </div>
         <div class="notify-section">
-            <p id="notify_false"class="notify">❌ Pin Didn't Match, Please try again</p>
-            <p id="notify_true" class="notify">✅ Pin Matched... Secret door is opening for you</p>
+            <p id="notifyFalse"class="notify">❌ Pin Didn't Match, Please try again</p>
+            <p id="notifyTrue" class="notify">✅ Pin Matched... Secret door is opening for you</p>
         </div>
     </div>
     <script src="pinMatcher.js"></script>
